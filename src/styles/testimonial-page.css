@@ -1,0 +1,515 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+    --primary: #ffa500;
+    --primaryLight: #ffa500;
+    --headerColor: #f7faf7;
+    --headerColorBlack: #000;
+    --background: #000;
+    --backgroundMain: #100;
+    --bodyTextColor: #f7faf7;
+    --bodyTextColorWhite: #fafbfc;
+    --bannerFontSize: clamp(2.4375rem, 3.9vw, 3.0625rem);
+    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    --bodyFontSize: 1rem;
+    --sectionPadding: clamp(3.75em, 7.82vw, 6.25em) 1rem;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #000;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: #000;
+    color: var(--bodyTextColor);
+}
+#main {
+    width: 100%;
+    height: auto;
+    background: var(--backgroundMain);
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10%;
+    background: #000;
+}
+nav .fas {
+    display: none;
+}
+.logo {
+    margin-top: 4px;
+    width: 140px;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a {
+    color: var(--bodyTextColor);
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: var(--primary);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after {
+    width: 100%;
+}
+nav ul li a.main-link::after {
+    width: 50%;
+}
+
+/*-- -------------------------- -->
+<---          Reviews           -->
+<--- -------------------------- -*/
+
+@media only screen and (min-width: 0rem) {
+    #reviews {
+        padding: var(--sectionPadding);
+        background: var(--backgroundMain);
+    }
+    #reviews .cs-container {
+        width: 100%;
+        max-width: 90em;
+        margin: auto;
+    }
+    #reviews .cs-topper {
+        font-size: var(--topperFontSize);
+        line-height: 1.2em;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 0.1em;
+        font-weight: 700;
+        color: var(--primary);
+        margin-bottom: 0.25rem;
+        display: block;
+    }
+    #reviews .cs-title {
+        font-size: var(--headerFontSize);
+        font-weight: 900;
+        line-height: 1.2em;
+        text-align: center;
+        max-width: 24ch;
+        margin: 0 auto 1rem;
+        color: var(--headerColor);
+        position: relative;
+    }
+    #reviews .cs-text {
+        font-size: var(--bodyFontSize);
+        line-height: 1.5rem;
+        text-align: center;
+        width: 100%;
+        max-width: 37.5rem;
+        margin: 0 auto;
+        margin-bottom: clamp(3rem, 6vw, 4rem);
+        color: var(--bodyTextColorWhite);
+    }
+    #reviews .cs-card-group {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: clamp(1rem, 2.5vw, 1.15rem);
+    }
+    #reviews .cs-item {
+        list-style: none;
+        width: 100%;
+        max-width: 39.375rem;
+        padding: clamp(1.25rem, 3.15vw, 2.5rem) clamp(1.25rem, 3.15vw, 2.5rem);
+        background-color: #f7f7f7;
+        border-radius: 1rem;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        position: relative;
+    }
+    #reviews .cs-quote {
+        width: 2.5rem;
+        height: auto;
+        margin-bottom: 2rem;
+        display: block;
+    }
+    #reviews .cs-quote-white {
+        width: 3.75rem;
+        height: auto;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 1.5rem;
+    }
+    #reviews .cs-review {
+        font-size: clamp(0.875rem, 1.6vw, 1.25rem);
+        line-height: 1.5em;
+        margin: 0;
+        margin-bottom: clamp(1.25rem, 3vw, 2.5rem);
+        color: var(--background);
+    }
+    #reviews .cs-flex-group {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0.75rem;
+    }
+    #reviews .cs-profile {
+        width: 3.125rem;
+        height: 3.125rem;
+        border: 4px solid var(--bodyTextColor);
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        display: block;
+    }
+    #reviews .cs-profile img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    #reviews .cs-name {
+        font-size: clamp(1.25rem, 3vw, 1.5625rem);
+        line-height: 1.2em;
+        font-weight: 700;
+        margin: 0;
+        margin-top: auto;
+        color: var(--background);
+        display: block;
+    }
+    #reviews .cs-job {
+        font-size: clamp(0.875rem, 1.6vw, 1rem);
+        line-height: 1.5em;
+        font-weight: 400;
+        margin: 0;
+        color: var(--primary);
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 48rem) {
+    #reviews .cs-card-group {
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+    #reviews .cs-item {
+        width: clamp(31.5%, 30vw, 32.3%);
+    }
+}
+
+/*-- -------------------------- -->
+<---            CTA             -->
+<--- -------------------------- -*/
+
+@media only screen and (min-width: 0em) {
+    #cta {
+        text-align: center;
+        padding: var(--sectionPadding);
+        position: relative;
+        background: #3a3a3a;
+    }
+    #cta .cs-container {
+        width: 100%;
+        max-width: 67.5em;
+        margin: auto;
+        position: relative;
+    }
+    #cta .cs-topper {
+        font-size: var(--topperFontSize);
+        line-height: 1.2em;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 0.1em;
+        font-weight: 700;
+        color: var(--primary);
+        margin-bottom: 1rem;
+        display: block;
+    }
+    #cta .cs-title {
+        font-size: var(--headerFontSize);
+        font-weight: 700;
+        line-height: 1.2em;
+        text-align: center;
+        max-width: 44.5625rem;
+        margin: 0 auto;
+        color: var(--bodyTextColorWhite);
+        position: relative;
+    }
+    #cta .cs-text {
+        font-size: var(--bodyFontSize);
+        line-height: 1.5rem;
+        text-align: center;
+        width: 100%;
+        max-width: 41.25rem;
+        margin: 2.25rem auto 2.25rem;
+        color: var(--bodyTextColorWhite);
+    }
+    #cta .cs-button-solid {
+        font-size: 1rem;
+        line-height: 3.5rem;
+        text-decoration: none;
+        font-weight: 700;
+        margin: auto;
+        color: var(--bodyTextColor);
+        padding: 0 1.5rem;
+        background-color: #999;
+        border-radius: 0.25rem;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        transition: color 0.3s;
+    }
+    #cta .cs-button-solid:before {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 0%;
+        background: var(--primary);
+        opacity: 1;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 0.25rem;
+        transition: width 0.3s;
+    }
+    #cta .cs-button-solid:hover {
+        color: var(--bodyTextColorWhite);
+    }
+    #cta .cs-button-solid:hover:before {
+        width: 100%;
+    }
+}
+
+/*-- -------------------------- -->
+<---          Footer            -->
+<--- -------------------------- -*/
+
+@media only screen and (min-width: 0em) {
+    #cs-footer {
+        padding: clamp(3.75em, 7.82vw, 6.25em) 1em;
+        background: var(--background);
+    }
+    #cs-footer .cs-container {
+        width: 100%;
+        max-width: 34.375em;
+        margin: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        column-gap: clamp(4.25em, calc(10%), 6.25em);
+    }
+    #cs-footer .cs-logo-group {
+        width: 100%;
+        position: relative;
+    }
+    #cs-footer .cs-logo {
+        width: clamp(13.125em, 8vw, 15em);
+        height: auto;
+        display: block;
+        margin-bottom: clamp(1.75em, 4.17vw, 2.75em);
+    }
+    #cs-footer .cs-logo-img {
+        width: 100%;
+        height: auto;
+    }
+    #cs-footer .cs-logo-img.dark {
+        display: none;
+    }
+    #cs-footer .cs-text {
+        font-size: clamp(0.875rem, 2.5vw, 1rem);
+        line-height: 1.5em;
+        margin: 0;
+        margin-bottom: 2rem;
+        max-width: 33.75rem;
+        color: var(--bodyTextColor);
+    }
+    #cs-footer .cs-nav {
+        padding: 0;
+        margin: 0;
+    }
+    #cs-footer .cs-nav-li {
+        list-style: none;
+        line-height: 1.5em;
+        margin-bottom: 0.5rem;
+    }
+    #cs-footer .cs-nav-li:last-of-type {
+        margin-bottom: 0;
+    }
+    #cs-footer .cs-header {
+        font-size: 1rem;
+        line-height: 1.5em;
+        font-weight: 700;
+        margin-bottom: 0.875rem;
+        color: var(--bodyTextColor);
+        position: relative;
+        display: block;
+    }
+    #cs-footer .cs-nav-link {
+        font-size: 1rem;
+        text-decoration: none;
+        line-height: 1.5em;
+        color: var(--bodyTextColor);
+        position: relative;
+    }
+    #cs-footer .cs-nav-link:before {
+        content: "";
+        width: 0%;
+        height: 0.125rem;
+        background: currentColor;
+        opacity: 1;
+        position: absolute;
+        display: block;
+        bottom: -0.125rem;
+        left: 0;
+        transition: width 0.3s;
+    }
+    #cs-footer .cs-nav-link:hover:before {
+        width: 100%;
+    }
+    #cs-footer .cs-contact {
+        margin: 0;
+        padding: 0;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-self: stretch;
+    }
+    #cs-footer .cs-contact-li {
+        list-style: none;
+        margin-bottom: 0em;
+    }
+    #cs-footer .cs-contact-li:last-of-type {
+        margin-bottom: 0;
+    }
+    #cs-footer .cs-contact-link {
+        font-size: 1rem;
+        text-decoration: none;
+        line-height: 1.5em;
+        text-align: left;
+        color: var(--bodyTextColor);
+        display: inline-block;
+    }
+    #cs-footer .cs-contact-link:hover {
+        text-decoration: underline;
+    }
+    #cs-footer .cs-address {
+        font-size: 1rem;
+        margin-bottom: 1.25rem;
+    }
+    #cs-footer .cs-social-group {
+        margin-top: auto;
+        margin-left: auto;
+    }
+    #cs-footer .cs-social {
+        display: inline-flex;
+        justify-content: flex-start;
+        gap: 0.75em;
+    }
+    #cs-footer .cs-social-link {
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: #4e4b66;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        transition: transform 0.3s, background-color 0.3s;
+    }
+    #cs-footer .cs-social-link:hover {
+        background-color: var(--primary);
+        transform: translateY(-0.1875rem);
+    }
+    #cs-footer .cs-social-img {
+        height: 0.8125em;
+        width: auto;
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 48em) {
+    #cs-footer .cs-container {
+        max-width: 80em;
+        row-gap: 0;
+    }
+    #cs-footer .cs-logo-group {
+        width: auto;
+        margin-right: auto;
+    }
+    #cs-footer .cs-text {
+        width: 80%;
+        max-width: 19.0625rem;
+        margin: 0;
+    }
+    #cs-footer .cs-nav,
+    #cs-footer .cs-contact {
+        margin-top: clamp(0.5em, 1.2vw, 0.75em);
+    }
+}
+  /*-- -------------------------- -->
+  <---   css for small screens    -->
+  <--- -------------------------- -*/
+
+@media only screen and (max-width: 1142px) {
+    nav .fas {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    nav ul {
+        background: #111;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+}

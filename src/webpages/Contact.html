@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/contact-page.css" />
+    <link rel="shortcut icon" href="../../assets/favicon.ico" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/d2a20a2d22.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../scripts/main-script.js" defer></script>
+    <title>Contact TechSchools</title>
+  </head>
+  <body>
+    <div id="main">
+      <div class="container">
+        <nav>
+          <a href="../../index.html">
+            <img src="../../assets/logo.png" alt="logo" class="logo" />
+          </a>
+          <ul id="sidemenu">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../webpages/About.html">About</a></li>
+            <li><a href="../webpages/Resources.html">Resources</a></li>
+            <li><a href="../webpages/Roadmaps.html">Roadmaps</a></li>
+            <li><a href="../webpages/Testimonials.html">Testimonials</a></li>
+            <li>
+              <a href="../webpages/Contact.html" class="main-link"
+                >Contact us</a
+              >
+            </li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+      </div>
+
+      <!-- ============================================ -->
+      <!--                   CONTACT                    -->
+      <!-- ============================================ -->
+
+      <div id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact Us</h1>
+              <p>
+                <i class="fa-solid fa-envelope"></i> support@tech-schools.live
+              </p>
+              <p><i class="fa-solid fa-phone"></i> +1 (555) 456 7899</p>
+              <div class="social-icons">
+                <a href="https://www.facebook.com/" target="_blank"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+                <a href="https://twitter.com/" target="_blank"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a href="https://github.com/" target="_blank"
+                  ><i class="fa-brands fa-square-github"></i
+                ></a>
+                <a href="https://www.instagram.com/" target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+            <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <input
+                  type="text"
+                  name="Name"
+                  placeholder="Your Name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="Email"
+                  id="email"
+                  placeholder="Your Email"
+                  required
+                />
+                <textarea
+                  name="Message"
+                  rows="6"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+                <button type="submit" class="btn btn2" onclick="ValidateEmail()">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ============================================ -->
+      <!--                   Stats                      -->
+      <!-- ============================================ -->
+
+      <div id="contact-strip">
+        <ul class="cs-stat-group">
+          <li class="cs-item">
+            <picture class="cs-picture" aria-hidden="true">
+              <img
+                class="cs-icon"
+                src="../../assets/phone-grey.svg"
+                alt="icon"
+                width="35"
+                height="40"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
+            <div class="cs-flex-group">
+              <span class="cs-header">Phone</span>
+              <a href="tel:555-456-7899" class="cs-link">+1 (555) 456 7899</a>
+              <a href="tel:555-456-7899" class="cs-link">+1 (555) 456 3546</a>
+            </div>
+          </li>
+          <li class="cs-item">
+            <picture class="cs-picture" aria-hidden="true">
+              <img
+                class="cs-icon"
+                src="../../assets/pin-grey.svg"
+                alt="icon"
+                width="40"
+                height="35"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
+            <div class="cs-flex-group">
+              <span class="cs-header">Address</span>
+              <a href="" class="cs-link"
+                >6th Street Main Technocity <br />Washington, DC 98755</a
+              >
+            </div>
+          </li>
+          <li class="cs-item">
+            <picture class="cs-picture" aria-hidden="true">
+              <img
+                class="cs-icon"
+                src="../../assets/clock-grey.svg"
+                alt="icon"
+                width="40"
+                height="40"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
+            <div class="cs-flex-group">
+              <span class="cs-header">Open Hours</span>
+              <span class="cs-hours">Monday To Saturday</span>
+              <span class="cs-hours">9:00 AM - 10:30 PM</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- ============================================ -->
+      <!--                   Stats                      -->
+      <!-- ============================================ -->
+
+      <section id="faq">
+        <div class="cs-container">
+          <span class="cs-topper">FAQ’s</span>
+          <h2 class="cs-title">Frequently Asked Questions</h2>
+          <div class="cs-flex-group">
+            <ul class="cs-faq-group">
+              <li class="cs-item">
+                <button class="cs-button">
+                  <span class="cs-button-text">
+                    What is the curriculum for the web development course/plan?
+                  </span>
+                </button>
+                <p class="cs-item-p">
+                  The curriculum for the web development course includes topics
+                  such as HTML, CSS, JavaScript, and the frameworks that are
+                  most in-demand (for example, React, Angular, Vue, etc.).
+                </p>
+              </li>
+              <li class="cs-item">
+                <button class="cs-button">
+                  <span class="cs-button-text">
+                    What modern Javascript frameworks are covered in the
+                    curriculum?
+                  </span>
+                </button>
+                <p class="cs-item-p">
+                  The curriculum covers modern Javascript frameworks such as
+                  React, Angular, Vue, etc.
+                </p>
+              </li>
+              <li class="cs-item">
+                <button class="cs-button">
+                  <span class="cs-button-text">
+                    Is prior experience in HTML, CSS and Vanilla JS required to
+                    enroll in the course?
+                  </span>
+                </button>
+                <p class="cs-item-p">
+                  Prior experience in HTML, CSS, and Vanilla JS is not
+                  necessarily required, but it can be helpful for a student to
+                  have some basic knowledge of these technologies before
+                  embarking for the journey of web development.
+                </p>
+              </li>
+              <li class="cs-item">
+                <button class="cs-button">
+                  <span class="cs-button-text">
+                    What kind of projects will students work on during the
+                    course?
+                  </span>
+                </button>
+                <p class="cs-item-p">
+                  Students will typically work on projects such as building
+                  websites and web applications, which will help them to apply
+                  the skills they have learned.
+                </p>
+              </li>
+              <li class="cs-item">
+                <button class="cs-button">
+                  <span class="cs-button-text">
+                    What kind of job opportunities are available after
+                    completing the course
+                  </span>
+                </button>
+                <p class="cs-item-p">
+                  Upon completion of the bootcamp, students will have job
+                  opportunities as web developers, front-end developers, or
+                  JavaScript developers, among others.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!--                     CTA                      -->
+      <!-- ============================================ -->
+
+      <section id="cta">
+        <div class="cs-container">
+          <span class="cs-topper">Be up-to-date</span>
+          <h2 class="cs-title">
+            Subscribe Your Email for Newsletter & Promotions
+          </h2>
+          <p class="cs-text">
+            Don't miss your chance to start a career in web development! Sign up
+            for our course today and learn the latest skills in HTML, CSS,
+            JavaScript and modern frameworks such as React, Angular, Vue etc.
+            With our expert instructors, hands-on projects, and a supportive
+            community of fellow students, you'll be on your way to a new career
+            in no time. Limited spots available, so enroll now before it's too
+            late. If you have any doubts or questions, don't hesitate to reach
+            out to us, you can find our contact information at the bottom of the
+            page. Don't just take our word for it, hear what our successful
+            students have to say:
+            <a href="../../src/webpages/Testimonials.html">Testimonials</a>
+          </p>
+          <form class="cs-form" name="Contact Form" method="post">
+            <input
+              class="cs-input"
+              type="email"
+              id="cs-email"
+              name="find-us"
+              placeholder="Email Address"
+            />
+            <button class="cs-button-solid" type="submit" onclick="alertUser()">Subscribe Now</button>
+          </form>
+        </div>
+        <!--Background Image-->
+        <picture class="cs-background" aria-hidden="true">
+          <source media="(max-width: 600px)" srcset="../../assets/team.jpg" />
+          <source media="(min-width: 601px)" srcset="../../assets/team.jpg" />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="../../assets/team.jpg"
+            alt="scale"
+            width="1920"
+            height="486"
+          />
+        </picture>
+      </section>
+
+      <!-- ============================================ -->
+      <!--                  Footer                      -->
+      <!-- ============================================ -->
+
+      <footer id="cs-footer">
+        <div class="cs-container">
+          <!-- Logo Group -->
+          <div class="cs-logo-group">
+            <a aria-label="go back to home" class="cs-logo" href="../../index.html">
+              <img
+                class="cs-logo-img"
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="../../assets/logo.png"
+                alt="logo"
+                width="240"
+                height="32"
+              />
+            </a>
+            <p class="cs-text">
+              If you have any questions or feedback, please do not hesitate to
+              contact us. We are always looking for ways to improve and would
+              love to hear your thoughts.
+            </p>
+          </div>
+          <!-- Links -->
+          <ul class="cs-nav">
+            <li class="cs-nav-li">
+              <span class="cs-header">Sitemap</span>
+            </li>
+            <li class="cs-nav-li">
+              <a class="cs-nav-link" href="../../src/webpages/About.html"
+                >About</a
+              >
+            </li>
+            <li class="cs-nav-li">
+              <a class="cs-nav-link" href="../../src/webpages/Resources.html"
+                >Resources</a
+              >
+            </li>
+            <li class="cs-nav-li">
+              <a class="cs-nav-link" href="../../src/webpages/Roadmaps.html"
+                >Roadmaps</a
+              >
+            </li>
+            <li class="cs-nav-li">
+              <a class="cs-nav-link" href="../../src/webpages/Testimonials.html"
+                >Testimonials</a
+              >
+            </li>
+            <li class="cs-nav-li">
+              <a class="cs-nav-link" href="../../src/webpages/Contact.html"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+          <!-- Contact Info -->
+          <ul class="cs-contact">
+            <li class="cs-nav-li">
+              <span class="cs-header">Contact</span>
+            </li>
+            <li class="cs-contact-li">
+              <a class="cs-contact-link" href="tel: 123-456-7890"
+                >(123) 456-7890</a
+              >
+            </li>
+            <li class="cs-contact-li">
+              <a class="cs-contact-link" href="mailto:support@tech-schools.live"
+                >support@tech-schools.live</a
+              >
+            </li>
+            <!-- Social Media -->
+            <li class="cs-contact-li cs-social-group">
+              <div class="cs-social">
+                <a
+                  class="cs-social-link"
+                  aria-label="visit google profile"
+                  href="https://www.google.com/account/about/"
+                  target="_blank"
+                >
+                  <img
+                    class="cs-social-img"
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    src="../../assets/google.svg"
+                    alt="google"
+                    width="11"
+                    height="11"
+                  />
+                </a>
+                <a
+                  class="cs-social-link"
+                  aria-label="visit facebook profile"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                >
+                  <img
+                    class="cs-social-img"
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    src="../../assets/Facebook.svg"
+                    alt="facebook"
+                    width="6"
+                    height="11"
+                  />
+                </a>
+                <a
+                  class="cs-social-link"
+                  aria-label="visit instagram profile"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                >
+                  <img
+                    class="cs-social-img"
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    src="../../assets/instagram.svg"
+                    alt="instagram"
+                    width="11"
+                    height="11"
+                  />
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

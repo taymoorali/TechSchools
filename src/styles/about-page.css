@@ -1,0 +1,913 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+    --primary: #ffa500;
+    --primaryLight: #ffa500;
+    --secondary: #ffa500;
+    --headerColor: #f7faf7;
+    --headerColorBlack: #000;
+    --background: #000;
+    --backgroundMain: #100;
+    --bodyTextColor: #f7faf7;
+    --bodyTextColorWhite: #fafbfc;
+    --bannerFontSize: clamp(2.4375rem, 3.9vw, 3.0625rem);
+    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    --bodyFontSize: 1rem;
+    --sectionPadding: clamp(3.75em, 7.82vw, 6.25em) 1rem;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--background);
+    color: var(--bodyTextColor);
+}
+
+#main {
+    width: 100%;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10%;
+    background: var(--background);
+}
+nav .fas {
+    display: none;
+}
+
+.logo {
+    margin-top: 4px;
+    width: 140px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: var(--bodyTextColor);
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: var(--primary);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a.main-link::after {
+    width: 50%;
+}
+
+  /*-- -------------------------- -->
+  <---       Side By Side         -->
+  <--- -------------------------- -*/
+
+@media only screen and (min-width: 0em) {
+    #sbs,
+    #sbs-r {
+        padding: var(--sectionPadding);
+    }
+    #sbs {
+        background: var(--backgroundMain);
+    }
+    #sbs-r {
+        background: #3a3a3a;
+    }
+    #sbs .cs-container,
+    #sbs-r .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 2.5rem;
+    }
+    #sbs .cs-left,
+    #sbs-r .cs-left {
+        font-size: min(2.31vw, 0.7em);
+        width: 39.4375em;
+        height: 39.75em;
+        position: relative;
+    }
+    #sbs .cs-picture,
+    #sbs-r .cs-picture {
+        border-radius: 1.5em;
+        overflow: hidden;
+        position: absolute;
+        display: block;
+    }
+    #sbs .cs-picture img,
+    #sbs-r .cs-picture img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    #sbs .cs-picture1,
+    #sbs-r .cs-picture1 {
+        width: 32.625em;
+        height: 36.3125em;
+        left: 0;
+        top: 0;
+    }
+    #sbs .cs-picture2,
+    #sbs-r .cs-picture2 {
+        width: 25.875em;
+        height: 25em;
+        background-color: var(--bodyTextColor);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
+        border: clamp(0.375em, 1.5vw, 0.75em) solid var(--bodyTextColor);
+        right: 0;
+        bottom: 0;
+    }
+    #sbs .cs-right,
+    #sbs-r .cs-right {
+        margin: auto;
+        max-width: 33.875rem;
+    }
+    #sbs .cs-topper,
+    #sbs-r .cs-topper {
+        font-size: var(--topperFontSize);
+        line-height: 1.2em;
+        text-transform: uppercase;
+        text-align: left;
+        letter-spacing: 0.1em;
+        font-weight: 700;
+        color: var(--secondary);
+        margin-bottom: 0.25rem;
+        display: block;
+    }
+    #sbs .intro,
+    #sbs-r .intro {
+        color: var(--primary);
+    }
+    #sbs .cs-title,
+    #sbs-r .cs-title {
+        font-size: var(--headerFontSize);
+        font-weight: 900;
+        line-height: 1.2em;
+        text-align: left;
+        max-width: 50rem;
+        margin: 0 auto 1rem;
+        color: var(--headerColor);
+        position: relative;
+    }
+    #sbs .cs-text,
+    #sbs-r .cs-text {
+        font-size: var(--bodyFontSize);
+        line-height: 1.5em;
+        text-align: left;
+        width: 100%;
+        max-width: 46.875rem;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        color: var(--bodyTextColor);
+    }
+    #sbs .cs-h3,
+    #sbs-r .cs-h3 {
+        font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+        line-height: 1.2em;
+        max-width: 32.625rem;
+        margin: 0;
+        margin-bottom: clamp(1rem, 3vw, 1.5rem);
+        color: var(--headerColor);
+    }
+    #sbs .cs-flex-group,
+    #sbs-r .cs-flex-group {
+        padding: clamp(1rem, 3vw, 2rem);
+        background-color: #f7f7f7;
+        border-radius: 1rem;
+        position: relative;
+    }
+    #sbs .cs-flex-p,
+    #sbs-r .cs-flex-p {
+        font-size: clamp(0.875rem, 1.5vw, 1rem);
+        line-height: 1.5em;
+        margin: 0 0 1rem;
+        color: #767676;
+    }
+    #sbs .cs-name,
+    #sbs-r .cs-name {
+        font-size: 1rem;
+        line-height: 1.2em;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 0 0 0.25rem;
+        color: var(--background);
+        display: block;
+    }
+    #sbs .cs-job,
+    #sbs-r .cs-job {
+        font-size: 0.875rem;
+        line-height: 1.5em;
+        color: #767676;
+        display: block;
+    }
+    #sbs .cs-quote-icon,
+    #sbs-r .cs-quote-icon {
+        width: clamp(3.75rem, 10vw, 8.5rem);
+        height: auto;
+        position: absolute;
+        bottom: 0rem;
+        right: clamp(1rem, 4vw, 2rem);
+    }
+}
+
+@media only screen and (min-width: 64em) {
+    #sbs .cs-container,
+    #sbs-r .cs-container {
+        flex-flow: row;
+        justify-content: space-between;
+        gap: 3.25rem;
+    }
+    #sbs .cs-left,
+    #sbs-r .cs-left {
+        font-size: min(1.2vw, 1em);
+        flex: none;
+    }
+    #sbs .cs-right,
+    #sbs-r .cs-right {
+        margin: 0;
+    }
+}
+  /*-- -------------------------- -->
+  <---    Side By Side Reverse    -->
+  <--- -------------------------- -*/
+
+@media only screen and (min-width: 0em) {
+    #sbs-r .cs-left {
+        order: 2;
+    }
+    #sbs-r .cs-picture1 {
+        left: auto;
+        right: 0;
+    }
+    #sbs-r .cs-picture2 {
+        right: auto;
+        left: 0;
+    }
+}
+  /*-- -------------------------- -->
+  <---           Stats            -->
+  <--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0em) {
+    #stats {
+        padding: var(--sectionPadding);
+        background-color: #f7f7f7;
+    }
+    #stats .cs-stat-group {
+        width: 100%;
+        max-width: 37.5em;
+        margin: auto;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+    #stats .cs-item {
+        list-style: none;
+        width: 14.6875rem;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #stats .cs-picture {
+        width: 5rem;
+        height: 5rem;
+        margin-right: clamp(0.75rem, 3vw, 1.25rem);
+        border-radius: 50%;
+        border: 1px solid #bababa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: none;
+    }
+    #stats .cs-icon {
+        width: 2.5rem;
+        height: auto;
+    }
+    #stats .cs-flex-group {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    #stats .cs-number {
+        font-size: var(--headerFontSize);
+        color: var(--background);
+        font-weight: 900;
+        line-height: 1.2em;
+        margin: 0;
+        display: block;
+    }
+    #stats .cs-stat {
+        font-size: var(--bodyFontSize);
+        line-height: 1.5em;
+        color: var(--primary);
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 40.625em) {
+    #stats .cs-stat-group {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 1.25rem;
+        row-gap: 2rem;
+    }
+}
+
+@media only screen and (min-width: 64em) {
+    #stats .cs-stat-group {
+        max-width: 80rem;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+}
+  /*-- -------------------------- -->
+  <---       Side By Side         -->
+  <--- -------------------------- -*/
+
+@media only screen and (min-width: 0em) {
+    #sbs-2 {
+        text-align: center;
+        padding: clamp(3.75em, 9.82vw, 9.375em) 1rem;
+    }
+    #sbs-2 .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 4.1875rem;
+    }
+    #sbs-2 .cs-left {
+        font-size: min(2.16vw, 0.68em);
+        width: 32.5em;
+        height: 42.5em;
+        position: relative;
+        display: block;
+    }
+    #sbs-2 .cs-left:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 0.75rem;
+        background: #bababa;
+        opacity: 1;
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        transform: rotate(15deg);
+    }
+    #sbs-2 .cs-left img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 0.625rem;
+        object-fit: cover;
+    }
+    #sbs-2 .cs-right {
+        max-width: 32.625rem;
+    }
+    #sbs-2 .cs-topper {
+        font-size: var(--topperFontSize);
+        line-height: 1.2em;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 0.1em;
+        font-weight: 700;
+        color: var(--secondary);
+        margin-bottom: 0.25rem;
+        display: block;
+    }
+    #sbs-2 .cs-title {
+        font-size: var(--headerFontSize);
+        font-weight: 900;
+        line-height: 1.2em;
+        text-align: center;
+        max-width: 50rem;
+        margin: 0 auto 1rem;
+        color: var(--headerColor);
+        position: relative;
+    }
+    #sbs-2 .cs-text {
+        font-size: var(--bodyFontSize);
+        line-height: 1.5em;
+        text-align: center;
+        width: 100%;
+        max-width: 46.875rem;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        color: var(--bodyTextColor);
+    }
+    #sbs-2 .cs-text:last-of-type {
+        margin-bottom: clamp(1.75rem, 4vw, 2.5rem);
+    }
+    #sbs-2 .cs-button-solid {
+        font-size: 1rem;
+        line-height: clamp(2.875em, 5.5vw, 3.5em);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-align: center;
+        margin: auto;
+        color: #1a1a1a;
+        min-width: 9.375rem;
+        padding: 0 1.5rem;
+        background-color: var(--secondaryLight);
+        border-radius: 0.25rem;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        box-sizing: border-box;
+        transition: color 0.3s;
+    }
+    #sbs-2 .cs-button-solid:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        background: var(--background);
+        opacity: 1;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 0.25rem;
+        transition: width 0.3s;
+    }
+    #sbs-2 .cs-button-solid:hover {
+        color: var(--bodyTextColor);
+    }
+    #sbs-2 .cs-button-solid:hover:before {
+        width: 100%;
+    }
+    #sbs-2 .cs-circles {
+        max-width: 23.375rem;
+        margin: auto;
+        margin-top: clamp(2.5rem, 3vw, 3rem);
+        display: flex;
+        gap: 1.25rem;
+    }
+    #sbs-2 .cs-ring-wrapper {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex: 1;
+        aspect-ratio: 1;
+    }
+    #sbs-2 .cs-number {
+        font-size: clamp(1.25rem, 3vw, 2.4375rem);
+        font-weight: 900;
+        pointer-events: none;
+        line-height: 1.2em;
+        color: var(--headerColor);
+    }
+    #sbs-2 .cs-desc {
+        font-size: clamp(0.875rem, 1.4vw, 1rem);
+        line-height: 1.5em;
+        text-align: center;
+        pointer-events: none;
+        width: 100%;
+        color: var(--bodyTextColor);
+        position: absolute;
+        bottom: -1.875rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #sbs-2 .cs-ring {
+        --ring-width: 8px;
+        position: absolute;
+        width: calc(100% - var(--ring-width));
+        aspect-ratio: 1;
+        overflow: visible;
+        pointer-events: none;
+        rotate: -90deg;
+        scale: 1 -1;
+    }
+    #sbs-2 .cs-ring circle {
+        fill: none;
+        stroke: #f7f7f7;
+        stroke-width: var(--ring-width);
+    }
+    #sbs-2 .cs-ring circle:last-of-type {
+        stroke: var(--secondaryLight);
+        stroke-linecap: round;
+        stroke-dasharray: calc(var(--ratio) * 314%) 314%;
+        transition: stroke-dasharray 1s;
+    }
+    #sbs-2 .cs-ring-wrapper:hover .cs-ring {
+        --ratio: 0 !important;
+    }
+}
+
+@media only screen and (min-width: 64em) {
+    #sbs-2 {
+        text-align: left;
+    }
+    #sbs-2 .cs-container {
+        flex-direction: row;
+        justify-content: center;
+        gap: clamp(4.8125rem, 11vw, 10rem);
+    }
+    #sbs-2 .cs-left {
+        font-size: min(1.1vw, 1em);
+        margin-left: 5rem;
+        flex: none;
+    }
+    #sbs-2 .cs-topper,
+    #sbs-2 .cs-title,
+    #sbs-2 .cs-text {
+        text-align: left;
+    }
+    #sbs-2 .cs-circles {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #sbs-2 .cs-desc {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        transform: none;
+    }
+}
+  /*-- -------------------------- -->
+  <---       Meet The Team        -->
+  <--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0em) {
+    #meet-us {
+        text-align: center;
+        padding: var(--sectionPadding);
+        background: #2a2a2a;
+    }
+    #meet-us .cs-container {
+        width: 100%;
+        max-width: 80em;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #meet-us .cs-topper {
+        font-size: var(--topperFontSize);
+        line-height: 1.2em;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 0.1em;
+        font-weight: 700;
+        color: var(--secondary);
+        margin-bottom: 0.25rem;
+        display: block;
+    }
+    #meet-us .cs-title {
+        font-size: var(--headerFontSize);
+        font-weight: 900;
+        line-height: 1.2em;
+        text-align: center;
+        max-width: 43.75rem;
+        margin: 0 auto 1rem;
+        color: var(--headerColor);
+        position: relative;
+    }
+    #meet-us .cs-text {
+        font-size: var(--bodyFontSize);
+        line-height: 1.5rem;
+        text-align: center;
+        width: 100%;
+        max-width: 31.25rem;
+        margin: 0 auto;
+        margin-bottom: clamp(3rem, 6vw, 4rem);
+        color: var(--bodyTextColor);
+    }
+    #meet-us .cs-card-group {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 1rem;
+        margin-bottom: clamp(3rem, 6vw, 4rem);
+    }
+    #meet-us .cs-item {
+        list-style: none;
+        width: 100%;
+        min-height: 18.875rem;
+        position: relative;
+        aspect-ratio: 1.08609272;
+    }
+    #meet-us .cs-item:hover .cs-background img {
+        transform: scale(1.1);
+    }
+    #meet-us .cs-info {
+        padding: 0.625rem 0;
+        background-color: rgba(255, 255, 255, 0.06);
+        border-radius: 0.5rem;
+        backdrop-filter: blur(18px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        bottom: clamp(0.75rem, 1.4vw, 1rem);
+        left: clamp(0.75rem, 1.4vw, 1rem);
+        right: clamp(0.75rem, 1.4vw, 1rem);
+        z-index: 10;
+    }
+    #meet-us .cs-name {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: var(--secondary);
+        line-height: 1.2em;
+        margin: 0;
+        display: block;
+    }
+    #meet-us .cs-job {
+        font-size: clamp(0.875rem, 1.5vw, 1rem);
+        line-height: 1.5em;
+        color: var(--bodyTextColor);
+        display: block;
+    }
+    #meet-us .cs-background {
+        width: 100%;
+        height: 100%;
+        border-radius: 0.75rem;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+    }
+    #meet-us .cs-background img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: transform 0.6s;
+    }
+}
+
+/*-- -------------------------- -->
+<---          Footer            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0em) {
+    #cs-footer {
+        padding: clamp(3.75em, 7.82vw, 6.25em) 1em;
+        background: var(--background);
+    }
+    #cs-footer .cs-container {
+        width: 100%;
+        max-width: 34.375em;
+        margin: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        column-gap: clamp(4.25em, calc(10%), 6.25em);
+    }
+    #cs-footer .cs-logo-group {
+        width: 100%;
+        position: relative;
+    }
+    #cs-footer .cs-logo {
+        width: clamp(13.125em, 8vw, 15em);
+        height: auto;
+        display: block;
+        margin-bottom: clamp(1.75em, 4.17vw, 2.75em);
+    }
+    #cs-footer .cs-logo-img {
+        width: 100%;
+        height: auto;
+    }
+    #cs-footer .cs-logo-img.dark {
+        display: none;
+    }
+    #cs-footer .cs-text {
+        font-size: clamp(0.875rem, 2.5vw, 1rem);
+        line-height: 1.5em;
+        margin: 0;
+        margin-bottom: 2rem;
+        max-width: 33.75rem;
+        color: var(--bodyTextColor);
+    }
+    #cs-footer .cs-nav {
+        padding: 0;
+        margin: 0;
+    }
+    #cs-footer .cs-nav-li {
+        list-style: none;
+        line-height: 1.5em;
+        margin-bottom: 0.5rem;
+    }
+    #cs-footer .cs-nav-li:last-of-type {
+        margin-bottom: 0;
+    }
+    #cs-footer .cs-header {
+        font-size: 1rem;
+        line-height: 1.5em;
+        font-weight: 700;
+        margin-bottom: 0.875rem;
+        color: var(--bodyTextColor);
+        position: relative;
+        display: block;
+    }
+    #cs-footer .cs-nav-link {
+        font-size: 1rem;
+        text-decoration: none;
+        line-height: 1.5em;
+        color: var(--bodyTextColor);
+        position: relative;
+    }
+    #cs-footer .cs-nav-link:before {
+        content: "";
+        width: 0%;
+        height: 0.125rem;
+        background: currentColor;
+        opacity: 1;
+        position: absolute;
+        display: block;
+        bottom: -0.125rem;
+        left: 0;
+        transition: width 0.3s;
+    }
+    #cs-footer .cs-nav-link:hover:before {
+        width: 100%;
+    }
+    #cs-footer .cs-contact {
+        margin: 0;
+        padding: 0;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-self: stretch;
+    }
+    #cs-footer .cs-contact-li {
+        list-style: none;
+        margin-bottom: 0em;
+    }
+    #cs-footer .cs-contact-li:last-of-type {
+        margin-bottom: 0;
+    }
+    #cs-footer .cs-contact-link {
+        font-size: 1rem;
+        text-decoration: none;
+        line-height: 1.5em;
+        text-align: left;
+        color: var(--bodyTextColor);
+        display: inline-block;
+    }
+    #cs-footer .cs-contact-link:hover {
+        text-decoration: underline;
+    }
+    #cs-footer .cs-address {
+        font-size: 1rem;
+        margin-bottom: 1.25rem;
+    }
+    #cs-footer .cs-social-group {
+        margin-top: auto;
+        margin-left: auto;
+    }
+    #cs-footer .cs-social {
+        display: inline-flex;
+        justify-content: flex-start;
+        gap: 0.75em;
+    }
+    #cs-footer .cs-social-link {
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: #4e4b66;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        transition: transform 0.3s, background-color 0.3s;
+    }
+    #cs-footer .cs-social-link:hover {
+        background-color: var(--primary);
+        transform: translateY(-0.1875rem);
+    }
+    #cs-footer .cs-social-img {
+        height: 0.8125em;
+        width: auto;
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 48em) {
+    #cs-footer .cs-container {
+        max-width: 80em;
+        row-gap: 0;
+    }
+    #cs-footer .cs-logo-group {
+        width: auto;
+        margin-right: auto;
+    }
+    #cs-footer .cs-text {
+        width: 80%;
+        max-width: 19.0625rem;
+        margin: 0;
+    }
+    #cs-footer .cs-nav,
+    #cs-footer .cs-contact {
+        margin-top: clamp(0.5em, 1.2vw, 0.75em);
+    }
+}
+
+  /*-- -------------------------- -->
+  <---   css for small screens    -->
+  <--- -------------------------- -*/
+
+@media only screen and (max-width: 1142px) {
+    nav .fas {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    nav ul {
+        background: #111;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    #meet-us .cs-card-group {
+        flex-direction: column;
+    }
+}

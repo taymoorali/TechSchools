@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/main-style.css" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/d2a20a2d22.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./src/scripts/main-script.js" defer></script>
+    <title>Home - TechSchools</title>
+  </head>
+  <body>
+    <!-- ============================================ -->
+    <!--                    HERO                      -->
+    <!-- ============================================ -->
+
+    <div id="main">
+      <div class="container">
+        <nav>
+          <a href="./index.html">
+            <img src="./assets/logo.png" alt="logo" class="logo" />
+          </a>
+          <ul id="sidemenu">
+            <li><a href="./index.html" class="main-link">Home</a></li>
+            <li><a href="./src/webpages/About.html">About</a></li>
+            <li><a href="./src/webpages/Resources.html">Resources</a></li>
+            <li><a href="./src/webpages/Roadmaps.html">Roadmaps</a></li>
+            <li><a href="./src/webpages/Testimonials.html">Testimonials</a></li>
+            <li><a href="./src/webpages/Contact.html">Contact us</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h2>Your <span>Career in Web Development</span> Starts Here</h2>
+          <h2 id="autotype">Learn <span class="autotype"></span></h2>
+        </div>
+        <section id="hero">
+          <div class="cs-container">
+            <p class="cs-text">
+              Our full stack curriculum is free and supported by a passionate
+              open source community.
+            </p>
+          </div>
+
+          <!-- ============================================ -->
+          <!--                  Tech Stacks                 -->
+          <!-- ============================================ -->
+
+          <section id="frameworks">
+            <div class="cs-container">
+              <span class="cs-topper"
+                >
+                Powered by FreeCodeCamp</span
+              >
+              <ul class="cs-card-group">
+                <li class="cs-item">
+                  <a
+                    href="https://www.youtube.com/watch?v=bMknfKXIFA8&ab_channel=freeCodeCamp.org"
+                    class="cs-link"
+                    target="_blank"
+                  >
+                    <span class="cs-name">REACT.js</span>
+                    <span class="cs-details">
+                      Details
+                      <img
+                        class="cs-icon"
+                        aria-hidden="true"
+                        src="./assets/arrow-right-gold.svg"
+                        loading="lazy"
+                        decoding="async"
+                        width="14"
+                        height="14"
+                        alt="arrow icon"
+                      />
+                    </span>
+                  </a>
+                  <picture class="cs-background">
+                    <img
+                      aria-hidden="true"
+                      loading="lazy"
+                      decoding="async"
+                      src="./assets/react.jpg"
+                      alt="react.js"
+                      width="412"
+                      height="462"
+                    />
+                  </picture>
+                </li>
+                <li class="cs-item">
+                  <a
+                    href="https://www.youtube.com/watch?v=RLtyhwFtXQA&ab_channel=freeCodeCamp.org"
+                    class="cs-link"
+                    target="_blank"
+                  >
+                    <span class="cs-name">NODE.js</span>
+                    <span class="cs-details">
+                      Details
+                      <img
+                        class="cs-icon"
+                        aria-hidden="true"
+                        src="./assets/arrow-right-gold.svg"
+                        loading="lazy"
+                        decoding="async"
+                        width="14"
+                        height="14"
+                        alt="arrow icon"
+                      />
+                    </span>
+                  </a>
+                  <picture class="cs-background">
+                    <img
+                      aria-hidden="true"
+                      loading="lazy"
+                      decoding="async"
+                      src="./assets/node.jpg"
+                      alt="node.js"
+                      width="412"
+                      height="462"
+                    />
+                  </picture>
+                </li>
+                <li class="cs-item">
+                  <a
+                    href="https://www.youtube.com/watch?v=-qfEOE4vtxE&ab_channel=freeCodeCamp.org"
+                    class="cs-link"
+                    target="_blank"
+                  >
+                    <span class="cs-name">BOOTSTRAP</span>
+                    <span class="cs-details">
+                      Details
+                      <img
+                        class="cs-icon"
+                        aria-hidden="true"
+                        src="./assets/arrow-right-gold.svg"
+                        loading="lazy"
+                        decoding="async"
+                        width="14"
+                        height="14"
+                        alt="arrow icon"
+                      />
+                    </span>
+                  </a>
+                  <picture class="cs-background">
+                    <img
+                      aria-hidden="true"
+                      loading="lazy"
+                      decoding="async"
+                      src="./assets/bootstrap.jpg"
+                      alt="bootstrap"
+                      width="412"
+                      height="462"
+                    />
+                  </picture>
+                </li>
+              </ul>
+            </div>
+            <a href="./src/webpages/Resources.html" class="cs-button-solid"
+              >View Our Resources</a
+            >
+          </section>
+        </section>
+
+        <!-- ============================================ -->
+        <!--                 Bootcamp Intro               -->
+        <!-- ============================================ -->
+
+        <section id="sbs">
+          <div class="cs-container">
+            <!-- Left Image Section -->
+            <picture class="cs-left" aria-hidden="true">
+              <img src="./assets/sbs-img.jpg" alt="image-1" />
+            </picture>
+            <!-- Right Content Section-->
+            <div class="cs-right">
+              <span class="cs-topper">TechSchools Web Dev Bootcamp</span>
+              <h2 class="cs-title">
+                Become proficient in
+                <span class="cs-hero">Full stack</span> development
+              </h2>
+              <p class="cs-text">
+                Welcome to our web development bootcamp! In this intensive
+                program, you will learn the foundations of HTML, CSS, and
+                JavaScript, and use these skills to build your own educational
+                website.
+                <br />
+                <br />
+                Our bootcamp is designed for individuals who are looking to
+                enter the field of web development, or who want to improve their
+                existing skills. Our team of experienced instructors will guide
+                you through the process of building a website from start to
+                finish, and provide you with the knowledge and resources you
+                need to succeed.
+                <br />
+                <br />
+                By the end of the bootcamp, you will have a strong foundation in
+                web development and be well on your way to building your own
+                websites. We can't wait to see what you create!
+              </p>
+              <a
+                class="cs-button-solid"
+                aria-label="learn more about our programs"
+                href="./src/webpages/Roadmaps.html"
+                >Learn More</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!--                   Roadmap                    -->
+        <!-- ============================================ -->
+
+        <section id="steps">
+          <div class="cs-container">
+            <span class="cs-topper">Best-In-Class</span>
+            <h2 class="cs-title">How It Works</h2>
+            <p class="cs-text">
+              This is the website we wish we had when we were learning on our
+              own. We scour the internet looking for only the best resources to
+              supplement your learning and present them in a logical order.
+            </p>
+            <ul class="cs-step-group">
+              <li class="cs-item">
+                <span class="cs-number">01</span>
+                <p class="cs-item-text">
+                  Learn from a curriculum with the best curated online
+                  tutorials, blogs, and courses.
+                </p>
+              </li>
+              <li class="cs-item">
+                <span class="cs-number">02</span>
+                <p class="cs-item-text">
+                  Build dozens of portfolio-worthy projects along the way, from
+                  simple scripts to full programs and deployed websites.
+                </p>
+              </li>
+              <li class="cs-item">
+                <span class="cs-number">03</span>
+                <p class="cs-item-text">
+                  You're not alone. Learn and get help from our friendly
+                  community of beginner and experienced developers.
+                </p>
+              </li>
+            </ul>
+            <a href="./src/webpages/About.html" class="cs-button-solid"
+              >Learn More</a
+            >
+          </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!--                  Coursemap                   -->
+        <!-- ============================================ -->
+
+        <section id="coursemap">
+          <div class="cs-container">
+            <span class="cs-topper">Fundamentals </span>
+            <h2 class="cs-title">Everything you need to know</h2>
+            <span class="cs-topper">Powered by FreeCodeCamp</span>
+            <p class="cs-text">
+              Following our hand-picked curriculum of web development you will
+              learn everything that you need to know from the beginning. From
+              HTML - CSS - Javascript to React - Node - Tailwind - MongoDB and
+              more!
+            </p>
+            <ul class="cs-card-group">
+              <li class="cs-item">
+                <div class="cs-content">
+                  <picture class="cs-wrapper">
+                    <img
+                      class="cs-icon"
+                      aria-hidden="true"
+                      loading="lazy"
+                      decoding="async"
+                      src="./assets/frontend.svg"
+                      alt="icon"
+                      width="70"
+                      height="70"
+                    />
+                  </picture>
+                  <h3 class="cs-h3">Frontend Development</h3>
+                  <p class="cs-item-p">
+                    Learn the best methods to design elegent yet responsive user
+                    interfaces
+                  </p>
+                  <a
+                    href="https://www.freecodecamp.org/learn/2022/responsive-web-design/"
+                    target="_blank"
+                    class="cs-link"
+                    >Learn More</a
+                  >
+                </div>
+              </li>
+              <li class="cs-item">
+                <div class="cs-content">
+                  <picture class="cs-wrapper">
+                    <img
+                      class="cs-icon"
+                      aria-hidden="true"
+                      loading="lazy"
+                      decoding="async"
+                      src="./assets/backend.svg"
+                      alt="icon"
+                      width="70"
+                      height="70"
+                    />
+                  </picture>
+                  <h3 class="cs-h3">Backend Development</h3>
+                  <p class="cs-item-p">
+                    Learn the most in-demand tools for developing the back-end
+                    of any web-app
+                  </p>
+                  <a
+                    href="https://www.freecodecamp.org/learn/back-end-development-and-apis/"
+                    target="_blank"
+                    class="cs-link"
+                    >Learn More</a
+                  >
+                </div>
+              </li>
+              <li class="cs-item">
+                <div class="cs-content">
+                  <picture class="cs-wrapper">
+                    <img
+                      class="cs-icon"
+                      aria-hidden="true"
+                      loading="lazy"
+                      decoding="async"
+                      src="./assets/db.svg"
+                      alt="icon"
+                      width="70"
+                      height="70"
+                    />
+                  </picture>
+                  <h3 class="cs-h3">Relational Databases</h3>
+                  <p class="cs-item-p">
+                    Learn how to take your web based application to the next
+                    level with relational databases
+                  </p>
+                  <a
+                    href="https://www.freecodecamp.org/learn/relational-database/"
+                    target="_blank"
+                    class="cs-link"
+                    >Learn More</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!--                   Reviews                    -->
+        <!-- ============================================ -->
+
+        <section id="reviews">
+          <div class="cs-container">
+            <div class="cs-content-wrapper">
+              <div class="cs-title-group">
+                <span class="cs-topper">Testimonials</span>
+                <h2 class="cs-title">What Students Say</h2>
+              </div>
+              <p class="cs-text">
+                Have a look at what our students think about us, if you are
+                still not sure, go ahead and read more Testimonials and then get
+                started with the TechSchools Bootcamp!
+              </p>
+            </div>
+            <ul class="cs-card-group">
+              <li class="cs-item">
+                <img
+                  class="cs-quote"
+                  aria-hidden="true"
+                  src="./assets/quote.svg"
+                  decoding="async"
+                  alt="quote icon"
+                  width="40"
+                  height="46"
+                />
+                <p class="cs-review">
+                  This platform is one of the best companies I have dealt with
+                  in Pakistan. They’re always happy to help, and I wouldn’t
+                  hesitate to recommend them.
+                </p>
+                <div class="cs-flex-group">
+                  <picture class="cs-picture" aria-hidden="true">
+                    <img
+                      class="cs-profile"
+                      src="./assets/timK.webp"
+                      decoding="async"
+                      alt="profile"
+                      width="50"
+                      height="50"
+                    />
+                  </picture>
+                  <span class="cs-name">
+                    Tim Cook
+                    <span class="cs-job">CEO Apple</span>
+                  </span>
+                </div>
+              </li>
+              <li class="cs-item">
+                <img
+                  class="cs-quote"
+                  aria-hidden="true"
+                  src="./assets/quote.svg"
+                  decoding="async"
+                  alt="quote icon"
+                  width="40"
+                  height="46"
+                />
+                <p class="cs-review">
+                  This platform is one of the best educational resource hub
+                  available as of now. I wouldn’t have been able to do anything
+                  without them. 10/10 Recommended.
+                </p>
+                <div class="cs-flex-group">
+                  <picture class="cs-picture" aria-hidden="true">
+                    <img
+                      class="cs-profile"
+                      src="./assets/eMusk.jpg"
+                      decoding="async"
+                      alt="profile"
+                      width="50"
+                      height="50"
+                    />
+                  </picture>
+                  <span class="cs-name">
+                    Elon Musk
+                    <span class="cs-job">CEO SpaceX</span>
+                  </span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <a href="./src/webpages/Testimonials.html" class="cs-button-solid"
+            >Read More Testimonials</a
+          >
+        </section>
+      </div>
+
+      <!-- ============================================ -->
+      <!--                  Footer                      -->
+      <!-- ============================================ -->
+
+      <footer id="cs-footer">
+        <div class="cs-container">
+          <!-- Logo Group -->
+          <div class="cs-logo-group">
+            <a aria-label="go back to home" class="cs-logo" href="./index.html">
+              <img
+                class="cs-logo-img"
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="./assets/logo.png"
+                alt="logo"
+                width="240"
+                height="32"
+              />
+            </a>
+            <p class="cs-text">
+              If you have any questions or feedback, please do not hesitate to
+              contact us. We are always looking for ways to improve and would
+              love to hear your thoughts.
+            </p>
+          </div>
+          <!-- Links -->
+          <ul class="cs-nav">
+            <li class="cs-nav-li">
+              <span class="cs-header">Sitemap</span>
+            </li>
+            <li class="cs-nav-li">
+              <a class="cs-nav-link" href="./src/webpages/About.html">About</a>
+            </li>
+            <li class="cs-nav-li">
+              <a class="cs-nav-link" href="./src/webpages/Resources.html"
+                >Resources</a
+              >
+            </li>
+            <li class="cs-nav-li">
+              <a class="cs-nav-link" href="./src/webpages/Roadmaps.html"
+                >Roadmaps</a
+              >
+            </li>
+            <li class="cs-nav-li">
+              <a class="cs-nav-link" href="./src/webpages/Testimonials.html"
+                >Testimonials</a
+              >
+            </li>
+            <li class="cs-nav-li">
+              <a class="cs-nav-link" href="./src/webpages/Contact.html"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+          <!-- Contact Info -->
+          <ul class="cs-contact">
+            <li class="cs-nav-li">
+              <span class="cs-header">Contact</span>
+            </li>
+            <li class="cs-contact-li">
+              <a class="cs-contact-link" href="tel: 123-456-7890"
+                >(123) 456-7890</a
+              >
+            </li>
+            <li class="cs-contact-li">
+              <a class="cs-contact-link" href="mailto:support@tech-schools.live"
+                >support@tech-schools.live</a
+              >
+            </li>
+            <!-- Social Media -->
+            <li class="cs-contact-li cs-social-group">
+              <div class="cs-social">
+                <a
+                  class="cs-social-link"
+                  aria-label="visit google profile"
+                  href="https://www.google.com/account/about/"
+                  target="_blank"
+                >
+                  <img
+                    class="cs-social-img"
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    src="./assets/google.svg"
+                    alt="google"
+                    width="11"
+                    height="11"
+                  />
+                </a>
+                <a
+                  class="cs-social-link"
+                  aria-label="visit facebook profile"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                >
+                  <img
+                    class="cs-social-img"
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    src="./assets/Facebook.svg"
+                    alt="facebook"
+                    width="6"
+                    height="11"
+                  />
+                </a>
+                <a
+                  class="cs-social-link"
+                  aria-label="visit instagram profile"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                >
+                  <img
+                    class="cs-social-img"
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    src="./assets/instagram.svg"
+                    alt="instagram"
+                    width="11"
+                    height="11"
+                  />
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+
+  <!-- ============================================ -->
+  <!--                 SCRIPTS                      -->
+  <!-- ============================================ -->
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+        var typed = new Typed(".autotype", {
+        strings: ["Front-end Development","UI/UX Design","Databases and their usage","Server-side Programming", "Back-end Development", "Deployment and Hosting"],
+        typeSpeed: 75,
+        backSpeed: 25,
+        loop: true
+    });
+  </script>
+</html>
+
+<!-----v1.0------>
