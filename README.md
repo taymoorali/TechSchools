@@ -3,3 +3,7 @@ An education website feauturing Web Development and serveral modern Javascript f
     1. HTML
     2. CSS
     3. Vanilla JS
+# Team
+    Taymoor Ali (team lead)
+    Abdul Wahab
+    Nahum Reginald
