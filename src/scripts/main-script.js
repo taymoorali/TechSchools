@@ -29,16 +29,14 @@ const form = document.forms['submit-to-google-sheet']
   }
 
   function alertUser(){
-    let email = document.getElementById("cs-email").value;
     let regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    let email = document.getElementById("cs-email").value;
 
-    if ((email != "" ) && (regex.test(email) == true)){
+    if ((email != "") && (regex.test(email))){
       alert("You have successfully signed up for our newsletter!");
-      return true;
     }
     else{
-      alert("Invalid input! Try again");
-      return (false);
+    alert("Invalid email, try again!");
     }
   }
 
@@ -47,9 +45,8 @@ const form = document.forms['submit-to-google-sheet']
     let regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
  if (regex.test(email))
   {
-    return (true);
+    return true;
   }
     alert("You have entered an invalid email address!");
-    return (false);
+    return false;
 }
-    
